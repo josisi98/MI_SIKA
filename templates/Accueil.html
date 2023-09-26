@@ -1,0 +1,766 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<!-- ======= Hero Section ======= -->
+<section id="hero" class="clearfix">
+    <div class="container" data-aos="fade-up">
+
+      <div class="hero-img" data-aos="zoom-out" data-aos-delay="200">
+        <img src="{{ url_for('static', filename = 'img/fond.jpg') }}" alt="" class="img-fluid">
+      </div>
+
+      <div class="hero-info" data-aos="zoom-in" data-aos-delay="100">
+        <h2>Des questions<br><span>sur votre</span><br>Retraite ?</h2>
+        <div>
+          <a href="#about" class="btn-get-started scrollto">Commencer</a>
+          <a href="#services" class="btn-services scrollto">Nos Services</a>
+        </div>
+      </div>
+
+    </div>
+  </section><!-- End Hero Section -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about">
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <h3>A propos de Nous</h3>
+          <p>une équipe dédiée au service de votre épargne retraite.</p>
+        </header>
+
+        <div class="row about-container">
+
+          <div class="col-lg-6 content order-lg-1 order-2">
+            <p>
+                MI_SIKA, premier courtier conseil indépendant dédié à l’épargne retraite supplémentaire,
+                a été créée en SEPTEMBRE 2023. Avec une double implantation à ABIDJAN, MI_SIKA
+                a pour vocation d'étendre son activité dans toutes les régions du pays.
+            </p>
+
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+              <div class="icon"><i class="bi bi-card-checklist"></i></div>
+              <h4 class="title"><a href="">Eiusmod Tempor</a></h4>
+              <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
+            </div>
+
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
+              <div class="icon"><i class="bi bi-brightness-high"></i></div>
+              <h4 class="title"><a href="">Magni Dolores</a></h4>
+              <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+            </div>
+
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
+              <div class="icon"><i class="bi bi-calendar4-week"></i></div>
+              <h4 class="title"><a href="">Dolor Sitema</a></h4>
+              <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
+            </div>
+
+          </div>
+
+          <div class="col-lg-6 background order-lg-2" data-aos="zoom-in">
+            <img src="{{ url_for('static', filename = 'img/eper.jpg') }}" alt="" class="img-fluid">
+          </div>
+        </div>
+
+        <div class="row about-extra">
+          <div class="col-lg-6" data-aos="fade-right">
+            <img src="{{ url_for('static', filename = 'img/exp1.jpg') }}" alt="" class="img-fluid"> <br><br>
+            <img src="{{ url_for('static', filename = 'img/exp.jpg') }}" alt="" class="img-fluid">
+          </div>
+          <div class="col-lg-6 pt-5 pt-lg-0" data-aos="fade-left">
+            <h4>Des experts pluridisciplinaires pour vous conseiller.</h4>
+            <p>
+                Convaincus de la force des réformes récentes, en particulier la
+                loi Pacte de 2019, les fondateurs de MI_SIKA, forts de leur
+                expérience de l’épargne et du conseil en investissements 
+                financiers, ont réuni une équipe dédiée pour accompagner 
+                clients particuliers et entreprises dans leurs démarches.
+                Les chargés d’affaires, formés par My PENSION à l’épargne
+                retraite, apportent leur proximité et leurs capacités d’
+                écoute et de conseil.
+            </p>
+            <p>
+                Les membres du conseil stratégique font bénéficier à
+                MI_SIKA d’une expertise unique en matière d’analyse
+                macroéconomique, de gestion d’actifs, de programmation
+                d’outils digitaux de dernière génération et de structuration
+                de plans d’épargne retraite.Les partenaires de MI_SIKA
+                (assureurs, sociétés de gestion, agences web) partagent
+                nos valeurs d’expertise, d’indépendance, d’innovation 
+                et de transparence.
+            </p>
+          </div>
+        </div>
+
+        <div class="row about-extra">
+          <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left">
+            <img src="{{ url_for('static', filename = 'img/sm.jpg') }}" alt="" class="img-fluid">
+          </div>
+
+          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-right">
+            <h4>Neque saepe temporibus repellat ea ipsum et. Id vel et quia tempora facere reprehenderit.</h4>
+            <p>
+              Delectus alias ut incidunt delectus nam placeat in consequatur. Sed cupiditate quia ea quis. Voluptas nemo qui aut distinctio. Cumque fugit earum est quam officiis numquam. Ducimus corporis autem at blanditiis beatae incidunt sunt.
+            </p>
+            <p>
+              Voluptas saepe natus quidem blanditiis. Non sunt impedit voluptas mollitia beatae. Qui esse molestias. Laudantium libero nisi vitae debitis. Dolorem cupiditate est perferendis iusto.
+            </p>
+            <p>
+              Eum quia in. Magni quas ipsum a. Quis ex voluptatem inventore sint quia modi. Numquam est aut fuga mollitia exercitationem nam accusantium provident quia.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <h3>Services</h3>
+          <p>LES services proposé pas MI_SIKA pour vour faciliter la vie </p>
+        </header>
+
+        <div class="row justify-content-center">
+
+          <div class="col-md-6 col-lg-5" data-aos="zoom-in" data-aos-delay="100">
+            <div class="box">
+              <div class="icon"><i class="bi bi-briefcase" style="color: #ff689b;"></i></div>
+              <h4 class="title"><a href="">Simulateur</a></h4>
+              <p class="description">SIMULATEUR D'EPARGNE RETRAITE</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-5" data-aos="zoom-in" data-aos-delay="200">
+            <div class="box">
+              <div class="icon"><i class="bi bi-card-checklist" style="color: #e9bf06;"></i></div>
+              <h4 class="title"><a href="">Orentation banquais</a></h4>
+              <p class="description">ORIENTATION VERS UNE BANQUE DE CONFIENCE ET QUI OFFRE DES PROFIS FABULEUX</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-5" data-aos="zoom-in" data-aos-delay="100">
+            <div class="box">
+              <div class="icon"><i class="bi bi-bar-chart" style="color: #3fcdc7;"></i></div>
+              <h4 class="title"><a href="">Conseil client</a></h4>
+              <p class="description">CONSEIL SUR L'EPARGNE RETRAITE PAR DES PARTENAIRE EXPERT DANS LE DOMAINE</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-5" data-aos="zoom-in" data-aos-delay="200">
+            <div class="box">
+                
+              <div class="icon"><i class="fa-regular fa-piggy-bank" style="color:#41cf2e;"></i></div>
+              <h4 class="title"><a href=""></a></h4>
+              <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+    <!-- ======= Why Us Section ======= -->
+    <section id="why-us">
+      <div class="container" data-aos="fade-up">
+        <header class="section-header">
+          <h3>Pouquois Nous?</h3>
+          <p>
+            </p>
+        </header>
+
+        <div class="row row-eq-height justify-content-center">
+
+          <div class="col-lg-4 mb-4">
+            <div class="card" data-aos="zoom-in" data-aos-delay="100">
+              <i class="bi bi-calendar4-week"></i>
+              <div class="card-body">
+                <h5 class="card-title">Précision et Personnalisation :</h5>
+                <p class="card-text">Votre site offre des simulations d'épargne retraite
+                    précises et hautement personnalisées. Grâce à des
+                    algorithmes sophistiqués et une analyse approfondie,
+                    il fournit des projections financières basées sur les
+                    données spécifiques de chaque utilisateur, prenant en
+                    compte divers paramètres tels que l'âge, le revenu 
+                    actuel, les dépenses, les objectifs de retraite, 
+                    etc. Les utilisateurs peuvent ainsi prendre des
+                    décisions informées et adaptées à leur situation unique...</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mb-4">
+            <div class="card" data-aos="zoom-in" data-aos-delay="200">
+              <i class="bi bi-camera-reels"></i>
+              <div class="card-body">
+                <h5 class="card-title">Facilité d'utilisation et Accessibilité :</h5>
+                <p class="card-text">
+                    Votre site propose une interface conviviale
+                    et intuitive, rendant la simulation d'épargne
+                    retraite accessible à tous, même à ceux qui ne
+                    sont pas experts en finances. Les utilisateurs
+                    peuvent facilement naviguer, saisir leurs données
+                    et obtenir des résultats clairs et compréhensibles.
+                    L'accessibilité de votre site sur différents appareils
+                    (ordinateurs, tablettes, smartphones) en fait un
+                    outil pratique et disponible à tout moment, où
+                    que l'utilisateur se trouve..
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mb-4">
+            <div class="card" data-aos="zoom-in" data-aos-delay="300">
+              <i class="bi bi-chat-square-text"></i>
+              <div class="card-body">
+                <h5 class="card-title">Conseils et Informations Précieuses :</h5>
+                <p class="card-text">En plus des simulations, votre site offre
+                    des conseils financiers avisés et des ressources éducatives
+                    sur la planification de la retraite. Vous fournissez des
+                    informations actualisées sur les régimes de retraite, les
+                    avantages fiscaux, les investissements recommandés, et bien
+                    plus encore. Les utilisateurs peuvent ainsi augmenter leur
+                    compréhension des enjeux financiers liés à la retraite et
+                    prendre des décisions judicieuses pour assurer leur avenir financier.. </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="row counters" data-aos="fade-up" data-aos-delay="100">
+        </div>
+
+      </div>
+    </section><!-- End Why Us Section -->
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="clearfix">
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <h3 class="section-title">Galerie</h3>
+        </header>
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+                <img src="{{ url_for('static', filename = 'img/about-extra-2.svg') }}" alt="" class="img-fluid">
+
+              <img src="assets/img/portfolio/app1.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <img src="{{ url_for('static', filename = 'img/about-extra-2.svg') }}" alt="" class="img-fluid">
+
+                <h4><a href="portfolio-details.html">App 1</a></h4>
+                <p>App</p>
+                <div>
+                    <img src="{{ url_for('static', filename = 'img/about-extra-2.svg') }}" alt="" class="img-fluid">
+
+                  <a href="assets/img/portfolio/app1.jpg" data-gallery="portfolioGallery" title="App 1" class="portfolio-lightbox link-preview"><i class="bi bi-plus"></i></a>
+                  <a href="portfolio-details.html" class="link-details" title="More Details"><i class="bi bi-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+                <img src="{{ url_for('static', filename = 'img/about-extra-2.svg') }}" alt="" class="img-fluid">
+
+              <img src="assets/img/portfolio/web3.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a href="portfolio-details.html">Web 3</a></h4>
+                <p>Web</p>
+                <div>
+                  <a href="assets/img/portfolio/web3.jpg" class="portfolio-lightbox link-preview" data-gallery="portfolioGallery" title="Web 3"><i class="bi bi-plus"></i></a>
+                  <a href="portfolio-details.html" class="link-details" title="More Details"><i class="bi bi-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+                <img src="{{ url_for('static', filename = 'img/about-extra-2.svg') }}" alt="" class="img-fluid">
+
+              <img src="assets/img/portfolio/app2.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a href="portfolio-details.html">App 2</a></h4>
+                <p>App</p>
+                <div>
+                    <img src="{{ url_for('static', filename = 'img/about-extra-2.svg') }}" alt="" class="img-fluid">
+
+                  <a href="assets/img/portfolio/app2.jpg" class="portfolio-lightbox link-preview" data-gallery="portfolioGallery" title="App 2"><i class="bi bi-plus"></i></a>
+                  <a href="portfolio-details.html" class="link-details" title="More Details"><i class="bi bi-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+                <img src="{{ url_for('static', filename = 'img/about-extra-2.svg') }}" alt="" class="img-fluid">
+
+              <img src="assets/img/portfolio/card2.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <img src="{{ url_for('static', filename = 'img/about-extra-2.svg') }}" alt="" class="img-fluid">
+
+                <h4><a href="portfolio-details.html">Card 2</a></h4>
+                <p>Card</p>
+                <div>
+                  <a href="assets/img/portfolio/card2.jpg" class="portfolio-lightbox link-preview" data-gallery="portfolioGallery" title="Card 2"><i class="bi bi-plus"></i></a>
+                  <a href="portfolio-details.html" class="link-details" title="More Details"><i class="bi bi-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+                <img src="{{ url_for('static', filename = 'img/about-extra-2.svg') }}" alt="" class="img-fluid">
+
+              <img src="assets/img/portfolio/web2.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <img src="{{ url_for('static', filename = 'img/about-extra-2.svg') }}" alt="" class="img-fluid">
+
+                <h4><a href="portfolio-details.html">Web 2</a></h4>
+                <p>Web</p>
+                <div>
+                  <a href="assets/img/portfolio/web2.jpg" class="portfolio-lightbox link-preview" data-gallery="portfolioGallery" title="Web 2"><i class="bi bi-plus"></i></a>
+                  <a href="portfolio-details.html" class="link-details" title="More Details"><i class="bi bi-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+                <img src="{{ url_for('static', filename = 'img/about-extra-2.svg') }}" alt="" class="img-fluid">
+
+              <img src="assets/img/portfolio/app3.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <img src="{{ url_for('static', filename = 'img/about-extra-2.svg') }}" alt="" class="img-fluid">
+
+                <h4><a href="portfolio-details.html">App 3</a></h4>
+                <p>App</p>
+                <div>
+                    <img src="{{ url_for('static', filename = 'img/about-extra-2.svg') }}" alt="" class="img-fluid">
+
+                  <a href="assets/img/portfolio/app3.jpg" class="portfolio-lightbox link-preview" data-gallery="portfolioGallery" title="App 3"><i class="bi bi-plus"></i></a>
+                  <a href="portfolio-details.html" class="link-details" title="More Details"><i class="bi bi-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/card1.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a href="portfolio-details.html">Card 1</a></h4>
+                <p>Card</p>
+                <div>
+                  <a href="assets/img/portfolio/card1.jpg" class="portfolio-lightbox link-preview" data-gallery="portfolioGallery" title="Card 1"><i class="bi bi-plus"></i></a>
+                  <a href="portfolio-details.html" class="link-details" title="More Details"><i class="bi bi-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/card3.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a href="portfolio-details.html">Card 3</a></h4>
+                <p>Card</p>
+                <div>
+                  <a href="assets/img/portfolio/card3.jpg" class="portfolio-lightbox link-preview" data-gallery="portfolioGallery" title="Card 3"><i class="bi bi-plus"></i></a>
+                  <a href="portfolio-details.html" class="link-details" title="More Details"><i class="bi bi-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/web1.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a href="portfolio-details.html">Web 1</a></h4>
+                <p>Web</p>
+                <div>
+                  <a href="assets/img/portfolio/web1.jpg" class="portfolio-lightbox link-preview" data-gallery="portfolioGallery" title="Web 1"><i class="bi bi-plus"></i></a>
+                  <a href="portfolio-details.html" class="link-details" title="More Details"><i class="bi bi-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Section -->
+
+    <!-- ======= Testimonials Section ======= -->
+<section id="testimonials" class="section-bg">
+    <div class="container" data-aos="zoom-in">
+  
+      <header class="section-header">
+        <h3>Témoignage</h3>
+      </header>
+  
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+  
+          <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+            <div class="swiper-wrapper">
+  
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <img src="{{ url_for('static', filename='img/josi.jpg') }}" alt="" class="testimonial-img">
+                  <h3>tayler jim</h3>
+                  <h4>Ceo &amp; Founder</h4>
+                  <p>
+                    Grâce à MI_SIKA, j'ai pu planifier efficacement mon épargne retraite. Les outils de simulation sont simples à utiliser et m'ont aidé à prendre des décisions éclairées pour mon avenir financier..
+                  </p>
+                </div>
+              </div><!-- End testimonial item -->
+  
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <img src="{{ url_for('static', filename='img/osc.jpg') }}" alt="" class="testimonial-img">
+                  <h3>Moko</h3>
+                  <h4>Designer</h4>
+                  <p>
+                    L'expérience avec MI_SIKA a été incroyable. Le site offre une vision claire de la manière dont mon épargne retraite peut grandir avec le temps. Cela m'a donné confiance dans mes choix financiers.                  </p>
+                </div>
+              </div><!-- End testimonial item -->
+  
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <img src="{{ url_for('static', filename='img/testimonial-3.jpg') }}" alt="" class="testimonial-img">
+                  <h3>Jena Karlis</h3>
+                  <h4>Store Owner</h4>
+                  <p>
+                    Les experts de MI_SIKA sont vraiment compétents et professionnels. Ils ont répondu à toutes mes questions et m'ont guidé à chaque étape de la planification de mon épargne retraite. Je recommande vivement leurs services.                  </p>
+                </div>
+              </div><!-- End testimonial item -->
+  
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <img src="{{ url_for('static', filename='img/testimonial-4.jpg') }}" alt="" class="testimonial-img">
+                  <h3>Matt Brandon</h3>
+                  <h4>Freelancer</h4>
+                  <p>
+                    MI_SIKA a rendu la simulation d'épargne retraite simple et accessible. Les interfaces conviviales ont facilité la compréhension de l'impact de mes décisions financières à long terme. Je suis ravi d'avoir choisi MI_SIKA.                  </p>
+                </div>
+              </div><!-- End testimonial item -->
+  
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <img src="{{ url_for('static', filename='img/testimonial-5.jpg') }}" alt="" class="testimonial-img">
+                  <h3>John Larson</h3>
+                  <h4>Entrepreneur</h4>
+                  <p>
+                    Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
+                  </p>
+                </div>
+              </div><!-- End testimonial item -->
+  
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+  
+        </div>
+      </div>
+  
+    </div>
+  </section><!-- End Testimonials Section -->
+  
+
+    <!-- ======= Team Section ======= -->
+    <section id="team">
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h3>Team</h3>
+          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6" data-aos="zoom-out" data-aos-delay="100">
+            <div class="member">
+                <img src="{{ url_for('static', filename = 'img/josi.jpg') }}" alt="" class="img-fluid">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Walter White</h4>
+                  <span>Chief Executive Officer</span>
+                  <div class="social">
+                    <a href=""><i class="bi bi-twitter"></i></a>
+                    <a href=""><i class="bi bi-facebook"></i></a>
+                    <a href=""><i class="bi bi-instagram"></i></a>
+                    <a href=""><i class="bi bi-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6" data-aos="zoom-out" data-aos-delay="200">
+            <div class="member">
+                <img src="{{ url_for('static', filename = 'img/osc.jpg') }}" alt="" class="img-fluid">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Sarah Jhonson</h4>
+                  <span>Product Manager</span>
+                  <div class="social">
+                    <a href=""><i class="bi bi-twitter"></i></a>
+                    <a href=""><i class="bi bi-facebook"></i></a>
+                    <a href=""><i class="bi bi-instagram"></i></a>
+                    <a href=""><i class="bi bi-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6" data-aos="zoom-out" data-aos-delay="300">
+            <div class="member">
+                <img src="{{ url_for('static', filename = 'img/team-3.jpg') }}" alt="" class="img-fluid">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>William Anderson</h4>
+                  <span>CTO</span>
+                  <div class="social">
+                    <a href=""><i class="bi bi-twitter"></i></a>
+                    <a href=""><i class="bi bi-facebook"></i></a>
+                    <a href=""><i class="bi bi-instagram"></i></a>
+                    <a href=""><i class="bi bi-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6" data-aos="zoom-out" data-aos-delay="400">
+            <div class="member">
+                <img src="{{ url_for('static', filename = 'img/team-4.jpg') }}" alt="" class="img-fluid">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Amanda Jepson</h4>
+                  <span>Accountant</span>
+                  <div class="social">
+                    <a href=""><i class="bi bi-twitter"></i></a>
+                    <a href=""><i class="bi bi-facebook"></i></a>
+                    <a href=""><i class="bi bi-instagram"></i></a>
+                    <a href=""><i class="bi bi-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Team Section -->
+
+    <!-- ======= Clients Section ======= -->
+<section id="clients" class="section-bg">
+    <div class="container" data-aos="fade-up">
+      <div class="section-header">
+        <h3>Our Clients</h3>
+        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque dere santome nida.</p>
+      </div>
+      <div class="row g-0 clients-wrap clearfix" data-aos="zoom-in" data-aos-delay="100">
+        <div class="col-lg-3 col-md-4 col-xs-6">
+          <div class="client-logo">
+            <img src="{{ url_for('static', filename='img/clients/client-1.png') }}" alt="" class="img-fluid">
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-xs-6">
+          <div class="client-logo">
+            <img src="{{ url_for('static', filename='img/clients/client-2.png') }}" alt="" class="img-fluid">
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-xs-6">
+          <div class="client-logo">
+            <img src="{{ url_for('static', filename='img/clients/client-3.png') }}" alt="" class="img-fluid">
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-xs-6">
+          <div class="client-logo">
+            <img src="{{ url_for('static', filename='img/clients/client-4.png') }}" alt="" class="img-fluid">
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-xs-6">
+          <div class="client-logo">
+            <img src="{{ url_for('static', filename='img/clients/client-5.png') }}" alt="" class="img-fluid">
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-xs-6">
+          <div class="client-logo">
+            <img src="{{ url_for('static', filename='img/clients/client-6.png') }}" alt="" class="img-fluid">
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-xs-6">
+          <div class="client-logo">
+            <img src="{{ url_for('static', filename='img/clients/client-7.png') }}" alt="" class="img-fluid">
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-xs-6">
+          <div class="client-logo">
+            <img src="{{ url_for('static', filename='img/clients/client-8.png') }}" alt="" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section><!-- End Clients Section -->
+  
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact">
+      <div class="container-fluid" data-aos="fade-up">
+
+        <div class="section-header">
+          <h3>Contact Us</h3>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-6">
+            <div class="map mb-4 mb-lg-0">
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="row">
+              <div class="col-md-5 info">
+                <i class="bi bi-geo-alt"></i>
+                <p>A108 Adam Street, NY 535022</p>
+              </div>
+              <div class="col-md-4 info">
+                <i class="bi bi-envelope"></i>
+                <p>info@example.com</p>
+              </div>
+              <div class="col-md-3 info">
+                <i class="bi bi-phone"></i>
+                <p>+1 5589 55488 55</p>
+              </div>
+            </div>
+
+            <div class="form">
+              <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                <div class="row">
+                  <div class="form-group col-lg-6">
+                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                  </div>
+                  <div class="form-group col-lg-6 mt-3 mt-lg-0">
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                  </div>
+                </div>
+                <div class="form-group mt-3">
+                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+                </div>
+                <div class="form-group mt-3">
+                  <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                </div>
+                <div class="my-3">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+                </div>
+                <div class="text-center"><button type="submit" title="Send Message">Send Message</button></div>
+              </form>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6 footer-info">
+            <h3>MI_SIKA</h3>
+            <p>Construisez dès aujourd'hui un avenir sans
+                regrets avec MI_SIKA ! Notre plateforme
+                vous ouvre les portes d'une planification
+                financière intelligente pour la retraite.
+                Ne laissez pas le futur vous surprendre,
+                anticipez et agissez en toute confiance
+                grâce à nos simulations précises et
+                personnalisées. Évitez les regrets
+                de demain en prenant des décisions
+                éclairées aujourd'hui. Rejoignez-nous
+                pour un avenir financier serein et bien préparé !
+            </p>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><a href="#">Accueil</a></li>
+              <li><a href="#">A propos</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Simulateur</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h4>Nous Contacter</h4>
+            <p>
+              Abidjan <br>
+              Cocody, Angree gestoci.
+               
+              <strong>Phone:</strong> +225 0758426942<br>
+              <strong>Email:</strong> josiaskouassi98@gmail.com<br>
+            </p>
+
+            <div class="social-links">
+              <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+              <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+              <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+            </div>
+
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-newsletter">
+            <h4>Notre Newsletter</h4>
+            <p>Restez informé des meilleures opportunités financières ! Abonnez-vous à notre newsletter pour ne rien manquer et optimiser votre épargne retraite..</p>
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong>MI_SIKA</strong>. Tous Droits Réservé
+      </div>
+      <div class="credits">
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  {% endblock content %}
