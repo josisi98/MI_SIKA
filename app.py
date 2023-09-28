@@ -102,5 +102,5 @@ def contact():
     return redirect(url_for('accueil'))
 
 if __name__ == '__main__':
-    db.create_all()  # Crée les tables avant de lancer l'application
+    db.create_all() 
     app.run(debug=True)

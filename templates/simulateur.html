@@ -1,0 +1,137 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+    <form class="cols">
+        <!-- Choix entre Salarié ou Travailleur non salarié -->
+        <div class="form-group form-inline">
+            <label class="form-radio">
+                <input type="radio" name="STAT_PRO" value="SAL">
+                <span class="input-label">Salarié</span>
+            </label>
+        </div>
+        <div class="form-group form-inline">
+            <label class="form-radio">
+                <input type="radio" name="STAT_PRO" value="TNS">
+                <span class="input-label">Travailleur non salarié</span>
+            </label>
+        </div>
+
+        <!-- Revenu mensuel -->
+        <div class="form-group form-inline">
+            <label class="row">
+                <div class="col label-col">
+                    <span class="input-label">Revenu mensuel (FCFA) *</span>
+                </div>
+                <div class="col">
+                    <div class="form-euro-group">
+                        <input class="form-control" type="number" name="REV_MENSUEL" placeholder="0">
+                    </div>
+                </div>
+            </label>
+        </div>
+        
+
+        <!-- Age et âge de la retraite -->
+        <div class="form-group form-inline">
+            <label class="row">
+                <div class="col label-col">
+                    <span class="input-label">Votre âge actuel *</span>
+                </div>
+                <div class="col">
+                    <div class="form-age-group">
+                        <input class="form-control" type="number" name="AGE" placeholder="0">
+                    </div>
+                </div>
+            </label>
+        </div>
+        <div class="form-group form-inline">
+            <label class="row">
+                <div class="col label-col">
+                    <span class="input-label">L'âge auquel vous prévoyez prendre votre retraite *</span>
+                </div>
+                <div class="col">
+                    <div class="form-age-group">
+                        <input class="form-control" type="number" name="AGE_RETRAITE" placeholder="0">
+                    </div>
+                </div>
+            </label>
+        </div>
+        <div class="form-group form-inline">
+            <label class="row">
+                <div class="col label-col">
+                    <span class="input-label">Années que vous prévoyez vivre après votre retraite *</span>
+                </div>
+                <div class="col">
+                    <input class="form-control" type="number" name="ANNEES_APRES_RETRAITE" placeholder="0">
+                </div>
+            </label>
+        </div>
+
+        <!-- Autres informations -->
+        <div class="form-group form-inline">
+            <label class="form-radio">
+                <input type="radio" name="SITUATION_MATRIMONIALE" value="MARIE">
+                <span class="input-label">Marié(e)</span>
+            </label>
+        </div>
+        <div class="form-group form-inline">
+            <label class="form-radio">
+                <input type="radio" name="SITUATION_MATRIMONIALE" value="DIVORCE">
+                <span class="input-label">Divorcé(e)</span>
+            </label>
+        </div>
+        <div class="form-group form-inline">
+            <label class="form-radio">
+                <input type="radio" name="SITUATION_MATRIMONIALE" value="VEUF">
+                <span class="input-label">Veuf(ve)</span>
+            </label>
+        </div>
+
+        <!-- Nombre d'enfants, dépenses mensuelles et versement -->
+        <div class="form-group form-inline">
+            <label class="row">
+                <div class="col label-col">
+                    <span class="input-label">Nombre d'enfants *</span>
+                </div>
+                <div class="col">
+                    <input class="form-control" type="number" name="NB_ENFANTS" placeholder="0">
+                </div>
+            </label>
+        </div>
+        <div class="form-group form-inline">
+            <label class="row">
+                <div class="col label-col">
+                    <span class="input-label">Montant total de vos dépenses mensuelles (FCFA) *</span>
+                </div>
+                <div class="col">
+                    <div class="form-euro-group">
+                        <input class="form-control" type="number" name="DEPENSES_MENSUELLES" placeholder="0">
+                    </div>
+                </div>
+            </label>
+        </div>
+        <div class="form-group form-inline">
+            <label class="row">
+                <div class="col label-col">
+                    <span class="input-label">Votre versement mensuel (FCFA) *</span>
+                </div>
+                <div class="col">
+                    <div class="form-euro-group">
+                        <input class="form-control" type="number" name="VERSEMENT_MENSUEL" placeholder="0">
+                    </div>
+                </div>
+            </label>
+        </div>
+
+        <!-- Autre contenu -->
+    <footer>
+        <div class="container">
+            <p>L'éclairage des experts</p>
+            <button class="btn btn-primary">éclairage des experts</button>
+        </div>
+    </footer>
+</body>
+
+{% endblock content %}
