@@ -3,6 +3,8 @@ from flask_sqlalchemy import SQLAlchemy
 import smtplib
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
+from flask_migrate import Migrate
+import os
 
 app = Flask(__name__)
 app.secret_key = 'lavienestrien'
@@ -10,6 +12,7 @@ app.secret_key = 'lavienestrien'
 # Configuration de la base de données
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///MI_SIKA.db'
 db = SQLAlchemy(app)
+migrate = Migrate(app, db)
 
 # Modèle Utilisateur
 class Utilisateur(db.Model):
@@ -98,13 +101,10 @@ def accueil():
 def apropos():
     return render_template('Apropos.html', title='À propos')
 
+
 @app.route('/simulateur')
 def simulateur():
-    return render_template('Simulateur.html', title='Simulateur')
-
-@app.route('/', methods=['GET', 'POST'])
-def index():
-    if request.method == 'POST':
+      if request.method == 'POST':
         # Récupérer les données du formulaire et enregistrer dans la base de données
         etape = Etape(
             statut_professionnel=request.form.get('STAT_PRO'),
@@ -117,14 +117,13 @@ def index():
             age_retraite=int(request.form.get('AGE_END', 0)),
             versements_fixes=float(request.form.get('VERS_ANN', 0)),
             progression_annuelle_revenus=int(request.form.get('TX_AUG_SAL', 0))
-        )
+)
         db.session.add(etape)
         db.session.commit()
         
         # Rediriger vers l'étape suivante
         return redirect(url_for('etape_suivante'))
-
-    return render_template('index.html')
+      return render_template('index.html')
 @app.route('/simulation', methods=['POST'])
 def simulation():
     # Récupérer les données du formulaire
@@ -177,6 +176,13 @@ def contact():
 
     return redirect(url_for('accueil'))
 
+def recreate_db():
+    db.drop_all()
+    db.create_all()
+
+
 if __name__ == '__main__':
-    db.create_all() 
-    app.run(debug=True)
+     if os.path.exists('your_database_name.db'):
+        os.remove('your_database_name.db')
+        recreate_db()
+     app.run(debug=True)

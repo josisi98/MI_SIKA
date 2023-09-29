@@ -1,137 +1,200 @@
 {% extends 'base.html' %}
 
 {% block content %}
+    <header class="header-wrap alt-wrap">
+        <div class="container">
+        <h1 class="header-title">Simulateur d’épargne retraite sur un PER individuel</h1>
+        </div>
+    </header>
 
+    <div class="Wrap_form">
 
-    <form class="cols">
-        <!-- Choix entre Salarié ou Travailleur non salarié -->
-        <div class="form-group form-inline">
-            <label class="form-radio">
+        <div class="pres_1">
+            <h2 class="form-title">Quel est votre statut professionnel actuel ? *</h2>
+            <form class="cols">
+                <div class="form-group">
+                <label class="form-radio">
                 <input type="radio" name="STAT_PRO" value="SAL">
                 <span class="input-label">Salarié</span>
-            </label>
-        </div>
-        <div class="form-group form-inline">
-            <label class="form-radio">
+                </label>
+                </div>
+                <div class="form-group">
+                <label class="form-radio">
                 <input type="radio" name="STAT_PRO" value="TNS">
                 <span class="input-label">Travailleur non salarié</span>
-            </label>
+                </label>
+                </div>
+            </form>
+            <div class="help-text"> * Champ obligatoire </div>
         </div>
-
-        <!-- Revenu mensuel -->
-        <div class="form-group form-inline">
-            <label class="row">
+        <div class="pres_2" >
+            <h2 class="form-title">Quels sont vos revenus annuels d’activité et leur évolution probable?</h2>
+            <form class="cols">
+                <div class="form-group form-inline">
+                <label class="row">
                 <div class="col label-col">
-                    <span class="input-label">Revenu mensuel (FCFA) *</span>
+                <span class="input-label">Vos revenus annuels d’activité 2023 (FCFA) *</span>
                 </div>
                 <div class="col">
-                    <div class="form-euro-group">
-                        <input class="form-control" type="number" name="REV_MENSUEL" placeholder="0">
-                    </div>
+                <div class="form-euro-group">
+                <input class="form-control" type="number" name="REV_0" value="" placeholder="0">
                 </div>
-            </label>
-        </div>
-        
-
-        <!-- Age et âge de la retraite -->
-        <div class="form-group form-inline">
-            <label class="row">
+                </div>
+                </label>
+                </div>
+                <div class="form-group form-inline form-multi-inline">
+                <label class="row">
                 <div class="col label-col">
-                    <span class="input-label">Votre âge actuel *</span>
+                <span class="input-label">Progression annuelle estimée de vos revenus jusqu’à la retraite&nbsp;: *</span>
+                </div>
+                </label>
+                <div class="row">
+                <div class="col">
+                <div class="form-group">
+                <label class="form-radio">
+                <input type="radio" name="TX_AUG_SAL" value="0">
+                <span class="input-label">Nulle</span>
+                </label>
+                </div>
                 </div>
                 <div class="col">
-                    <div class="form-age-group">
-                        <input class="form-control" type="number" name="AGE" placeholder="0">
-                    </div>
+                <div class="form-group">
+                <label class="form-radio">
+                <input type="radio" name="TX_AUG_SAL" value="1">
+                <span class="input-label">Faible 1%</span>
+                </label>
                 </div>
-            </label>
-        </div>
-        <div class="form-group form-inline">
-            <label class="row">
-                <div class="col label-col">
-                    <span class="input-label">L'âge auquel vous prévoyez prendre votre retraite *</span>
                 </div>
                 <div class="col">
-                    <div class="form-age-group">
-                        <input class="form-control" type="number" name="AGE_RETRAITE" placeholder="0">
-                    </div>
+                <div class="form-group">
+                <label class="form-radio">
+                <input type="radio" name="TX_AUG_SAL" value="3">
+                <span class="input-label">Moyenne 3%</span>
+                </label>
                 </div>
-            </label>
-        </div>
-        <div class="form-group form-inline">
-            <label class="row">
-                <div class="col label-col">
-                    <span class="input-label">Années que vous prévoyez vivre après votre retraite *</span>
                 </div>
                 <div class="col">
-                    <input class="form-control" type="number" name="ANNEES_APRES_RETRAITE" placeholder="0">
+                <div class="form-group">
+                <label class="form-radio">
+                <input type="radio" name="TX_AUG_SAL" value="5">
+                <span class="input-label">Forte 5%</span>
+                </label>
                 </div>
-            </label>
-        </div>
-
-        <!-- Autres informations -->
-        <div class="form-group form-inline">
-            <label class="form-radio">
-                <input type="radio" name="SITUATION_MATRIMONIALE" value="MARIE">
-                <span class="input-label">Marié(e)</span>
-            </label>
-        </div>
-        <div class="form-group form-inline">
-            <label class="form-radio">
-                <input type="radio" name="SITUATION_MATRIMONIALE" value="DIVORCE">
-                <span class="input-label">Divorcé(e)</span>
-            </label>
-        </div>
-        <div class="form-group form-inline">
-            <label class="form-radio">
-                <input type="radio" name="SITUATION_MATRIMONIALE" value="VEUF">
-                <span class="input-label">Veuf(ve)</span>
-            </label>
-        </div>
-
-        <!-- Nombre d'enfants, dépenses mensuelles et versement -->
-        <div class="form-group form-inline">
-            <label class="row">
-                <div class="col label-col">
-                    <span class="input-label">Nombre d'enfants *</span>
                 </div>
                 <div class="col">
-                    <input class="form-control" type="number" name="NB_ENFANTS" placeholder="0">
+                <div class="form-group form-radio-input-group">
+                <label class="form-radio">
+                <input type="radio" name="TX_AUG_SAL" value="CUSTOM">
+                <span class="input-label">Personnalisé</span>
+                <input class="form-control" type="text" name="TX_AUG_SAL_CUSTOM" value="" placeholder="Entre -10% et 10%">
+                </label>
                 </div>
-            </label>
+                </div>
+                </div>
+                </div>
+            </form>
+                <div class="help-text"> * Champ obligatoire </div>
         </div>
-        <div class="form-group form-inline">
-            <label class="row">
+        <div class="pres_3" >
+            <form class="cols">
+                <div class="form-group form-inline">
+                <label class="row">
                 <div class="col label-col">
-                    <span class="input-label">Montant total de vos dépenses mensuelles (FCFA) *</span>
+                <span class="input-label">Quel âge avez-vous aujourd'hui ? *</span>
                 </div>
                 <div class="col">
-                    <div class="form-euro-group">
-                        <input class="form-control" type="number" name="DEPENSES_MENSUELLES" placeholder="0">
-                    </div>
+                <div class="form-age-group">
+                <input class="form-control" type="number" name="AGE_0" value="" placeholder="0">
                 </div>
-            </label>
+                </div>
+                </label>
+                </div>
+            </form>
+            <div class="help-text"> * Champ obligatoire </div>
         </div>
-        <div class="form-group form-inline">
-            <label class="row">
+        <div class="pres_4" >
+            <h2 class="form-title">Comment et combien allez vous verser sur votre PER les années suivantes ?</h2>
+            <form class="cols">
+                <div class="form-group form-inline">
+                <label class="form-radio">
+                <div class="row">
                 <div class="col label-col">
-                    <span class="input-label">Votre versement mensuel (FCFA) *</span>
+                <input type="radio" name="MOD_VERS" value="FIX">
+                <span class="input-label">Versements fixes de *</span>
                 </div>
                 <div class="col">
-                    <div class="form-euro-group">
-                        <input class="form-control" type="number" name="VERSEMENT_MENSUEL" placeholder="0">
-                    </div>
+                <div class="form-euro-group">
+                <input class="form-control" type="number" name="VERS_ANN" value="" placeholder="0">
                 </div>
-            </label>
+                </div>
+                </div>
+                </label>
+                </div>
+                <div class="form-group form-inline">
+                <label class="form-radio">
+                <div class="row">
+                <div class="col label-col">
+                <input type="radio" name="MOD_VERS" value="PROP">
+                <span class="input-label">Versements proportionnels au salaire de *</span>
+                </div>
+                <div class="col">
+                <div class="form-percent-group">
+                <input class="form-control" type="number" name="PERC_SAL" value="" placeholder="% du salaire">
+                </div>
+                <span class="perc-sal-error-message error-message"></span><br>
+                <span class="perc-sal-calcul-message"></span>
+                </div>
+                </div>
+                </label>
+                </div>
+            </form>
+            <div class="help-text"> * Champ obligatoire </div>
         </div>
-
-        <!-- Autre contenu -->
-    <footer>
-        <div class="container">
-            <p>L'éclairage des experts</p>
-            <button class="btn btn-primary">éclairage des experts</button>
+        <div class="pres_5" >
+            <form class="cols">
+                <div class="form-group form-inline">
+                <label class="row">
+                <div class="col label-col">
+                <span class="input-label">Combien allez vous verser sur votre PER en 2023 ? *</span>
+                </div>
+                <div class="col">
+                <div class="form-euro-group">
+                <input class="form-control" type="number" name="VERS_0" value="" placeholder="0">
+                </div>
+                </div>
+                </label>
+                </div>
+            </form>
+            <div class="help-text"> * Champ obligatoire </div>
+            <div class="col label-col">Vous pouvez indiquer un montant supérieur à votre plafond de l’année car vous pouvez avoir des plafonds antérieurs non utilisés. Le simulateur va calculer votre avantage fiscal en considérant le versement comme entièrement déductible.
+            </div>
         </div>
-    </footer>
-</body>
-
+        <div class="pres_6">
+            <h2 class="form-title">
+                A quel âge envisagez-vous de prendre votre retraite et liquider votre PER ?
+            </h2>
+                <div>
+                <form class="result-form">
+                <div class="row">
+                <div class="col">
+                <div class="result-info">Age envisagé de retraite : </div>
+                </div>
+                <div class="col col-range">
+                <input class="form-range" name="AGE_END_SLIDE" type="range" min="62" value="65" max="75" step="1">
+                </div>
+                <div class="col">
+                <div class="form-age-group">
+                <input class="form-control" type="number" name="AGE_END" value="65" min="62" max="75" disabled="">
+                </div>
+                </div>
+                </div>
+            </form>
+            <div class="help-text"> * Champ obligatoire </div>
+        </div>
+    </div>
+        <div class="default-action F_6" >
+            <button type="button" class="btn btn-secondary move">Envoyer</button>
+        </div>
+    </div>
+</div>
 {% endblock content %}
