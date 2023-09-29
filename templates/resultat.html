@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .result-box {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        .result-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .result-item {
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+    </style>
+    <title>Résultats de la simulation</title>
+</head>
+<body>
+    <h1>Résultats de la simulation</h1>
+
+    <div class="result-box">
+        <div class="result-title">Résumé de la simulation :</div>
+        <div class="result-item">Age : {{ data.age }}</div>
+        <div class="result-item">Statut professionnel : {{ data.statut_professionnel }}</div>
+        <div class="result-item">Revenus annuels 2023 (EUR) : {{ data.revenus_annuels_2023 }}</div>
+        <div class="result-item">Taux d'augmentation salariale : {{ data.taux_augmentation_salaire }}%</div>
+        <div class="result-item">Age de retraite envisagé : {{ data.age_retraite_envisage }}</div>
+        <div class="result-item">Mode de versements : {{ data.mode_versements }}</div>
+        <div class="result-item">Montant annuel versé : {{ data.montant_annuel }} EUR</div>
+    </div>
+
+    <!-- Ajoutez ici d'autres boîtes de résultats ou graphiques si nécessaire -->
+
+</body>
+</html>
